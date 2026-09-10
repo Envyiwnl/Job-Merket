@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is the backend for the intern/job portal",
+  "license": "ISC",
+  "author": "Parvez Mussarf",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed:companies": "node src/seed/seedCompanies.js",
+    "seed:categories": "node src/seed/seedCategories.js",
+    "seed:jobs": "node src/seed/seedJobs.js",
+    "seed:resources": "node src/seed/seedResources.js",
+    "seed:all": "npm run seed:companies && npm run seed:categories && npm run seed:jobs && npm run seed:resources"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase-admin": "^14.3.0",
+    "googleapis": "^178.0.0",
+    "mongoose": "^9.9.4",
+    "multer": "^2.3.0",
+    "nodemailer": "^10.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

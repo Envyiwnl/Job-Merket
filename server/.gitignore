@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime / temp files
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage/
+
+# Secrets
+secrets/
+
+# Build output
+dist/
+build/
+
+# Deployment metadata
+.vercel/
+.render/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local credential / key files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Firebase / Google credential files
+serviceAccountKey.json
+firebase-admin*.json
+google-credentials*.json
+credentials.json
+token.json
