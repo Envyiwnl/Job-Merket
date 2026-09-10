@@ -20,6 +20,8 @@ await connectDB();
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 app.use(
   cors({
     origin: process.env.CLIENT_URL,
@@ -58,7 +60,7 @@ app.get("/api/auth/test", verifyFirebaseToken, (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
